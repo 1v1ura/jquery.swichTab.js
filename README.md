@@ -11,7 +11,7 @@
     </tr>
   </thead>
   <tr>
-    <th rowspan="2">cahngePanel</th>
+    <th>cahngePanel</th>
     <td>'toggle'<br>(default)</td>
     <td>string</td>
     <td>エフェクトしないでタブを切り替え</td>
@@ -22,7 +22,7 @@
     <td>フェードインをしながらタブを切り替え</td>
   </tr>
   <tr>
-    <th rowspan="2">swiper</th>
+    <th>swiper</th>
     <td>true</td>
     <td>boolean</td>
     <td>タッチイベント対応デバイスでスワイプによるタブ切り替えを許可</td>
