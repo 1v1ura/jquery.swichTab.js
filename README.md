@@ -1,6 +1,42 @@
 # jQuery swichTab
 
-## optionss
+## markup
+```
+<div class="tabGroup tabGroup1">
+  <ul class="swichtab-controller">
+    <li data-swichtab="controller"><a href="#tab1">tab1</a></li>
+    <li data-swichtab="controller"><a href="#tab2">tab2</a></li>
+    <li data-swichtab="controller"><a href="#tab3">tab3</a></li>
+  </ul>
+  <div class="swichtab-contents">
+    <div id="tab1" class="swichtab-panel" data-swichtab="target">
+      <p>hogehoge</p>
+    </div>
+ 
+    <div id="tab2" class="swichtab-panel" data-swichtab="target">
+      <p>fugafuga</p>
+    </div>
+ 
+    <div id="tab3" class="swichtab-panel" data-swichtab="target">
+      <p>piyopiyo</p>
+    </div>
+  </div>
+  <!-- /.swichtab-contents -->
+</div>
+<!-- /.swichtab -->
+```
+
+## usage
+```
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+ 
+<script src="./src/js/jquery.swichTab.js" charset="utf-8"></script>
+<script type="text/javascript">
+  $('.tabGroup1').swichTab();
+</script>
+```
+
+## options
 <table>
   <thead>
     <tr>
