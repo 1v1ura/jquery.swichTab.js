@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.swichtab-controller {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.swichtab-controller > li {
+  flex: 1 1 auto;
+  border: #70C1B3 1px solid;
+  border-width: 1px 1px 1px 0;
+}
+
+.swichtab-controller > li:first-child {
+  border-width: 1px;
+}
+
+.swichtab-controller > li > a {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  color: #70C1B3;
+  text-decoration: none;
+}
+
+.swichtab-controller > li.is-active > a {
+  background-color: #70C1B3;
+  color: #fff;
+}
+
+.swichtab-contents {
+  padding: 20px;
+  border: #70C1B3 1px solid;
+  border-width: 0 1px 1px 1px;
+  overflow: hidden;
+}
+
+.swichtab-panel {
+  display: none;
+}

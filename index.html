@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>swichTab</title>
+  <link rel="stylesheet" href="./src/css/normalize.css">
+  <link rel="stylesheet" href="./src/css/base.css">
+  <link rel="stylesheet" href="./src/css/swichTab.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="heading01">jQuery swichTab</h1>
+
+    <div class="tabGroup tabGroup1">
+      <ul class="swichtab-controller">
+        <li data-swichtab="controller"><a href="#markup">markup</a></li>
+        <li data-swichtab="controller"><a href="#js">java script</a></li>
+        <li data-swichtab="controller"><a href="#options">options</a></li>
+      </ul>
+      <div class="swichtab-contents">
+        <div id="markup" class="swichtab-panel" data-swichtab="target">
+          <h2>markup</h2>
+          <pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;div&nbsp;class="tabGroup&nbsp;tabGroup1"&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&lt;ul&nbsp;class="swichtab-controller"&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;data-swichtab="controller"&gt;&lt;a&nbsp;href="#tab1"&gt;tab1&lt;/a&gt;&lt;/li&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;data-swichtab="controller"&gt;&lt;a&nbsp;href="#tab2"&gt;tab2&lt;/a&gt;&lt;/li&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;data-swichtab="controller"&gt;&lt;a&nbsp;href="#tab3"&gt;tab3&lt;/a&gt;&lt;/li&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&lt;/ul&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&lt;div&nbsp;class="swichtab-contents"&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id="tab1"&nbsp;class="swichtab-panel"&nbsp;data-swichtab="target"&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;hogehoge&lt;/p&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id="tab2"&nbsp;class="swichtab-panel"&nbsp;data-swichtab="target"&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;fugafuga&lt;/p&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id="tab3"&nbsp;class="swichtab-panel"&nbsp;data-swichtab="target"&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;piyopiyo&lt;/p&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&lt;/div&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&lt;!--&nbsp;/.swichtab-contents&nbsp;--&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;/div&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;!--&nbsp;/.swichtab&nbsp;--&gt;</span></span></div></pre>
+        </div>
+
+        <div id="js" class="swichtab-panel" data-swichtab="target">
+          <h2>java script</h2>
+          <pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;script&nbsp;src="</span><span class="syntax--markup syntax--underline syntax--link syntax--https syntax--hyperlink"><span>https://code.jquery.com/jquery-3.2.1.min.js</span></span><span>"&nbsp;integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="&nbsp;crossorigin="anonymous"&gt;&lt;/script&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;script&nbsp;src="./src/js/jquery.swichTab.js"&nbsp;charset="utf-8"&gt;&lt;/script&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;script&nbsp;type="text/javascript"&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;$('.tabGroup1').swichTab();</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;/script&gt;</span></span></div></pre>
+        </div>
+
+        <div id="options" class="swichtab-panel" data-swichtab="target">
+          <h2>options</h2>
+          <div class="table01">
+          <table>
+            <thead>
+              <tr>
+                <th>option name</th>
+                <th>value</th>
+                <th>type</th>
+                <th>description</th>
+              </tr>
+            </thead>
+            <tr>
+              <th rowspan="2">cahngePanel</th>
+              <td>'toggle'<br>(default)</td>
+              <td>string</td>
+              <td>エフェクトしないでタブを切り替え</td>
+            </tr>
+            <tr>
+              <td>'fade'</td>
+              <td>string</td>
+              <td>フェードインをしながらタブを切り替え</td>
+            </tr>
+            <tr>
+              <th rowspan="2">swiper</th>
+              <td>true</td>
+              <td>boolean</td>
+              <td>タッチイベント対応デバイスでスワイプによるタブ切り替えを許可</td>
+            </tr>
+            <tr>
+              <td>false<br>(default)</td>
+              <td>boolean</td>
+              <td>タッチイベント対応デバイスでスワイプによるタブ切り替えを禁止</td>
+            </tr>
+            <tr>
+              <th>index</th>
+              <td>number<br>(default : 0)</td>
+              <td>number</td>
+              <td>初期表示時にアクティブにするタブを指定</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+      </div>
+      <!-- /.swichtab-contents -->
+    </div>
+    <!-- /.swichtab -->
+
+    <h2 class="heading02">sample</h2>
+    <pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;script&nbsp;type="text/javascript"&gt;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;$('.tabGroup2').swichTab({</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;cahngePanel:&nbsp;'fade',</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;swiper:&nbsp;true,</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;&nbsp;&nbsp;index:&nbsp;2,</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;&nbsp;});</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&lt;/script&gt;</span></span></div></pre>
+    <div class="tabGroup tabGroup2">
+      <ul class="swichtab-controller">
+        <li data-swichtab="controller"><a href="#tab1">tab1</a></li>
+        <li data-swichtab="controller"><a href="#tab2">tab2</a></li>
+        <li data-swichtab="controller"><a href="#tab3">tab3</a></li>
+        <li data-swichtab="controller"><a href="#tab4">tab4</a></li>
+      </ul>
+      <div class="swichtab-contents">
+        <div id="tab1" class="swichtab-panel" data-swichtab="target">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div id="tab2" class="swichtab-panel" data-swichtab="target">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div id="tab3" class="swichtab-panel" data-swichtab="target">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div id="tab4" class="swichtab-panel" data-swichtab="target">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <!-- /.swichtab-contents -->
+    </div>
+    <!-- /.swichtab -->
+
+  </div>
+  <!-- /.wrap -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <script src="./src/js/jquery.swichTab.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('.tabGroup1').swichTab();
+    $('.tabGroup2').swichTab({
+      cahngePanel: 'fade',
+      swiper: true,
+      index: 2,
+    });
+  </script>
+</body>
+</html>
